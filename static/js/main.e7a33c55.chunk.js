@@ -15728,8 +15728,8 @@
               (this.hadInput = !1),
               p.key[u.Forward] &&
                 ((this.hadInput = !0),
-                (this.posVec.x -= e * this.speed * this.sX),
-                (this.posVec.z -= e * this.speed * this.sZ)),
+                (this.posVec.x -= e * 400 * this.sX),
+                (this.posVec.z -= e * 400 * this.sZ)),
               p.key[u.Backward] &&
                 ((this.hadInput = !0),
                 (this.posVec.x += e * this.speed * this.sX),
