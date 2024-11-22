@@ -15728,8 +15728,8 @@
               (this.hadInput = !1),
               p.key[u.Forward] &&
                 ((this.hadInput = !0),
-                (this.posVec.x -= e * 400 * this.sX),
-                (this.posVec.z -= e * 400 * this.sZ)),
+                (this.posVec.x -= e * this.speed * this.sX),
+                (this.posVec.z -= e * this.speed * this.sZ)),
               p.key[u.Backward] &&
                 ((this.hadInput = !0),
                 (this.posVec.x += e * this.speed * this.sX),
@@ -15752,7 +15752,7 @@
                 !this.matchSpeed &&
                 (this.targetSpeed = this.baseSpeed),
               this.hadElev && (this.targetElevSpeed = this.baseElevSpeed),
-              p.key[u.BoostAccel] && (this.targetSpeed *= 2),
+              p.key[u.BoostAccel] && (this.targetSpeed *= 200),
               (this.speed = 0.9 * this.speed + 0.1 * this.targetSpeed),
               (this.elevSpeed =
                 0.95 * this.elevSpeed + 0.05 * this.targetElevSpeed),
